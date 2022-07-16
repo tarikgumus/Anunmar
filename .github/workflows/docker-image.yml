@@ -17,4 +17,4 @@ jobs:
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "kosucuadam" --password-stdin
         docker image build -t kosucuadam/palacer:latest .
-        docker push kosucuadam/nerburg:latest
+        docker push kosucuadam/palacer:latest
