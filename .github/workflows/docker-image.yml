@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "nurimocum" --password-stdin
-        docker image build -t nurimocum/hasterice:latest .
-        docker push nurimocum/hasterice:latest
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "osmancuer" --password-stdin
+        docker image build -t nurimocum/nerburg:latest .
+        docker push nurimocum/nerburg:latest
