@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "yekplucr" --password-stdin
-        docker image build -t yekplucr/statcompile:latest .
-        docker push kosucuadam/statcompile:latest
+        docker image build -t yekplucr/sturpmer:latest .
+        docker push yekplucr/sturpmer:latest
