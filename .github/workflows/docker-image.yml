@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "osmancuer" --password-stdin
-        docker image build -t nurimocum/nerburg:latest .
-        docker push nurimocum/nerburg:latest
+        docker image build -t osmancuer/nerburg:latest .
+        docker push osmancuer/nerburg:latest
