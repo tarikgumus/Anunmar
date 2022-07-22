@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "isudamimurda" --password-stdin
-        docker image build -t isudamimurda/anunayil:latest .
-        docker push isudamimurda/anunayil:latest
+        docker image build -t isudamimurda/anunay23l:latest .
+        docker push isudamimurda/anunay23l:latest
