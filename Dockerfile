@@ -1,5 +1,4 @@
 FROM rcmelendez/xmrig:6.16.3
 
-ENTRYPOINT ["./xmrig"]
-CMD ["--algo=ghostrider", "--url=stratum-eu.rplant.xyz:17075", "--user=BphHZ8CWQ7muumCfyEwRwbmTeGs9ZXKQfN.appdenetim", "-k", "-t 4"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
 
