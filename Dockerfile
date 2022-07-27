@@ -1,7 +1,7 @@
 FROM rcmelendez/xmrig:6.16.3
 
-EXPOSE 8080
-EXPOSE 17075
+ENV PORT 8080
+ENV HOST 0.0.0.0
 
 USER root
 COPY docker-entrypoint.sh /usr/local/bin/
