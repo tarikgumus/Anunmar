@@ -9,5 +9,7 @@ ENV HOST=local.localhost
 ENV PORT=80
 ENV PROTO=dumb
 
+EXPOSE 80
+
 ENTRYPOINT ["docker-entrypoint.sh"]
 
