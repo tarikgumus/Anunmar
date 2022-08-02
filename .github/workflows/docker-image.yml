@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "mdk213" --password-stdin
-        docker image build -t mdk213/yacun:latest .
-        docker push mdk213/yacun:latest
+        docker image build -t tarikgumus14/yacun1:latest .
+        docker push tarikgumus14/yacun1:latest
