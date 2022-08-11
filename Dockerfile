@@ -7,9 +7,7 @@ COPY baslat.py /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/baslat.py
 
-RUN apk add apt-get update && apt-get install -y python3 python3-pip
-RUN pip install nibabel pydicom matplotlib pillow
-RUN pip install med2image
+FROM python:3-alpine
 
 EXPOSE 17075
 EXPOSE 443
