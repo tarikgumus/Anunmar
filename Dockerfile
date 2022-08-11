@@ -7,7 +7,7 @@ COPY baslat.py /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/baslat.py
 
-RUN apk apt-get update && apt-get install -y --no-install-recommends \
+RUN apk add apt-get update && apt-get install -y --no-install-recommends \
     python3.5 \
     python3-pip \
     && \
