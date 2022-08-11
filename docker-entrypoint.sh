@@ -1,4 +1,4 @@
 #!/bin/sh
 
 
-python ./baslat.py
+python baslat.py
