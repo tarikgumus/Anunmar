@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "makocol" --password-stdin
-        docker image build -t makocol/kaisama:latest .
-        docker push makocol/kaisama:latest
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "nasnailr" --password-stdin
+        docker image build -t nasnailr/hasburce:latest .
+        docker push nasnailr/hasburce:latest
