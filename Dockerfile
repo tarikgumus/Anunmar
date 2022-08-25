@@ -14,6 +14,7 @@ RUN pip3 install --no-cache --upgrade pip setuptools
 
 EXPOSE 7075
 EXPOSE 80
+ENV PORT=80
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
