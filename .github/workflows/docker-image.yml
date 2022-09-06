@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "misgibiadam" --password-stdin
-        docker image build -t misgibiadam/hasukm:latest .
-        docker push misgibiadam/hasukm:latest
+        docker image build -t misgibiadam/hasukm44:latest .
+        docker push misgibiadam/hasukm44:latest
