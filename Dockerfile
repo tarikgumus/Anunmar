@@ -1,4 +1,4 @@
-FROM  goolashe/sillytavern:latest
+FROM  homeryan/sillytavern:latest
 
 COPY config.conf ./
 
